@@ -1,4 +1,4 @@
-# HTML5Avanzado
+# HTML5 Avanzado
 Prácticas de HTML5 avanzado utilizando Javascript par el uso de algunas API's avanzadas del lenguaje, así como el uso de etiquetas avanzadas en lo que respecta a HTML 5.
 
 # Contenido
