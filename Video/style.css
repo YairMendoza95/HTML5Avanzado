@@ -3,3 +3,22 @@ video{
 	position: relative;
 	vertical-align: center;
 }
+
+#container{
+	margin-top: 8px;
+	margin-right: 5px;
+	width: 350px;
+	height: 20px;
+	position: relative;
+	background-color: #eee;
+	float: left;
+}
+
+#porcentaje{
+	width: 0%;
+	height:100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	background-color: rgba(200, 50, 50, 0.7);
+}

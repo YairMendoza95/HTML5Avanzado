@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Video</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<video id="video">
+		<source src="video.mp4" type="video/mp4" >
+	</video>
+	<br>
+	<button id="reproducir">></button> 
+	<button id="pausa">||</button> 
+	<button id="stop">X</button> 
+	<div id="container">
+		<div id="porcentaje"></div> 
+	</div> 
+	<span id="tiempo"></span> 
+	<input type="range" id="volumen" min="0" max="1" step="0.1" value="0.2">
+	<input x-webkit-speech> <!-- Sirve para mostrar un micrófono a lado para poder hablar -->
+	<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
