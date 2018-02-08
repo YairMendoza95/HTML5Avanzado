@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>History API</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		window.history.back(); // Funciona para retroceder en la página
+		window.history.forward(); // Funciona para ir una página hacia adelante
+		window.history.go(); // Va hacia el número de páginas que reciba como parámetro (números negativos retrocede y números positivos avanza)
+		console.log(window.history.length); // Muestra el tamaño de a pila de páginas que contiene una pestaña 
+
+
+		// Reciben tres parámetros un stateobject con informacion que quieramos enviar al pasado o el futuro en el navegador, un titulo que es ignorado por el navegador y el cambio de la URL 
+		window.history.pushState(null, "", "/cambio"); // Agrega un nuevo estado a la pestaña
+		window.history.replaceState(null, "", "/cambio") // Modifica el estado actual
+
+		window.onpopstate = (e) => {
+			// Recupera el estado actual de nuestro historial en un JSON
+		}
+	</script>
+</body>
+</html>

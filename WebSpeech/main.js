@@ -14,13 +14,13 @@ function init () {
 	// Roconocimiento de voz
 	var sr = new webkitSpeechRecognition();
 	sr.continuous = true; // Define si el reconocimiento de voz va a ser continuo
-	sr.interinResults = true; // Define si vamos a tener acceso a lo que el usuario este diciendo mientra hable o hasta que termine 
+	sr.interimResults = true; // Define si vamos a tener acceso a lo que el usuario este diciendo mientra hable o hasta que termine 
 	sr.lang = "es"; // Define el lenguaje
 	sr.start();
 	sr.onresult = (e) => {
 		for (var i = e.resultIndex; i < e.results.length; ++i) {
 			if(e.results[i].isFinal){
-				var palabra = e.results[i][0].trascript.replace(/\s/g, "");
+				var palabra = e.results[i][0].transcript.replace(/\s/g, "");
 				if(palabra == "reproducir"){
 					ponerPlay();
 				}
