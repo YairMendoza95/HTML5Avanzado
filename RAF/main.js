@@ -1,6 +1,6 @@
 window.addEventListener('load', init);
 
-var ctx, canvas, x = 0, y = 0, v_x = 5, v_y = 5;
+var ctx, canvas, x = 0, y = 0, v_x = 10, v_y = 10;
 
 window.requestAnimationFrame = (function () {
 	return window.requestAnimationFrame || 
@@ -27,7 +27,7 @@ function draw () {
 	y += v_y;
 
 	// Rebote 
-	if(x < 0 || x > canvas.width) v_x = -v_x;
-	if(y < 0 || y > canvas.height) v_y = -v_y;
+	if(x < 5 || x > canvas.width - 5) v_x = -v_x;
+	if(y < 5 || y > canvas.height - 5) v_y = -v_y;
 	requestAnimationFrame(draw);
 }
